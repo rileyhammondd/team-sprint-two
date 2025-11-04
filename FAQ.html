@@ -5,15 +5,64 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>3D Printing FAQ</title>
   <link rel="stylesheet" href="FAQ.css" />
+  
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Google Icon Font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Materialize CDN here -->
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- JavaScript/jQuery Function Initialization inside <script> </script>  -->
+    <script>
+        $(document).ready(function() {
+            $('.sidenav').sidenav();
+        });
+        $(document).ready(function() {
+            $('.parallax').parallax();
+        });
+    </script>
+  
 </head>
 <body>
+
+      <!-- 1. Navigation section -->
+    <nav>
+    <div class="nav-wrapper blue darken-3">
+      <a href="#!" class="brand-logo white-text">Layer By Layer</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="info%20page%20.html">Information Page</a></li>
+        <li><a href="FAQ.html">FAQ Page</a></li>
+        <li><a href="aboutme.html">About Me</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="home.html">Home</a></li>
+    <li><a href="info%20page%20.html">Information</a></li>
+    <li><a href="FAQ/FAQ.html">FAQ Page</a></li>
+    <li><a href="About%2520Us/AboutUs.html">About Us</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+  </ul>
 
   <div class="container">
     <h1>3D Printing FAQ</h1>
 
     <div class="faq-item">
       <h2>What is 3D printing?</h2>
-       <img src="images/3d%20printing%20for%203d.jpg" alt="image" style="float:right;width:50%;height:50%;padding:20px">
+       <img src="3dprint.webp" alt="image" style="float:right;width:50%;height:50%;padding:20px">
       <p>3D printing is a manufacturing process that makes physical objects by building them layer by layer from a digital model. Instead of cutting material away, like in traditional manufacturing, it adds material, usually plastic, resin, or metal, to create shapes.</p>
     </div>
     
