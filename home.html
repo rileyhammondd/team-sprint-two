@@ -29,10 +29,9 @@
         $(document).ready(function() {
             $('.parallax').parallax();
         });
-        $(document).ready(function(){
+           $(document).ready(function(){
     $('.carousel').carousel();
   });
-      
     </script>
 
     <style>
@@ -48,6 +47,16 @@
         }
         
         img {size: landscape}
+        
+          body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
     </style>
 
 
@@ -79,7 +88,7 @@
   
       <!-- 2. First Parallax section -->
     <div class="parallax-container valign-wrapper">
-        <div class="parallax"><img src="3dprint.jpg"></div>
+        <div class="parallax"><img src="images/3dprint.jpg"></div>
         <div class="container">
             <div class="row">
                 <div class="col l12 m12 s12 white-text center-align">
@@ -94,9 +103,6 @@
         </div>
     </div>
     
-    
-   
-    
      <!-- 3. About Me section -->
     <div class="container">
         <div class="row">
@@ -109,7 +115,7 @@ Our consulting team helps organizations understand and apply this technology to 
       
     </div>
     
-    
+
      <!--4. Javascript-Carousel Feature-->
     <div class="container">
         <div class="row">
@@ -124,154 +130,38 @@ Our consulting team helps organizations understand and apply this technology to 
     <a class="carousel-item" href="#five!"><img src="3d%20printing%20for%203d.jpg"></a>
   </div>
 
+ 
+
 <iframe src="https://www.youtube.com/embed/a42znmU6BLE?rel=0&modestbranding=1" width="100%" height="350"></iframe>
- 
- 
- 
 
- <footer>
-    
-        Copyright &copy; 2025 Layer by Layer - Riley Hammond
-    </footer>
-
-
-</body>
-
-</html><!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8" />
-    <title>Home Page</title>
-    <link rel="stylesheet" href="home.css">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Google Icon Font -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-
-    <!-- jQuery CDN -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <!-- Materialize CDN here -->
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
-    <!-- JavaScript/jQuery Function Initialization inside <script> </script>  -->
-    <script>
-        $(document).ready(function() {
-            $('.sidenav').sidenav();
-        });
-        $(document).ready(function() {
-            $('.parallax').parallax();
-        });
-        $(document).ready(function(){
-    $('.carousel').carousel();
-  });
-      
-    </script>
-
-    <style>
-        .brand-logo {
-            margin: 0px
-        }
-        
-        h4 {font: bold;
-           }
-        
-        h5 {
-            font-size: medium;
-        }
-        
-        img {size: landscape}
-    </style>
-
-
-</head>
-
-<body>
-    <!-- 1. Navigation section -->
-    <nav>
-    <div class="nav-wrapper blue darken-3">
-      <a href="#!" class="brand-logo white-text">Layer By Layer</a>
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="home.html">Home</a></li>
-        <li><a href="info%20page%20.html">Information Page</a></li>
-        <li><a href="FAQ.html">FAQ Page</a></li>
-        <li><a href="AboutUs.html">About Me</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <ul class="sidenav" id="mobile-demo">
-    <li><a href="home.html">Home</a></li>
-    <li><a href="info%20page%20.html">Information</a></li>
-    <li><a href="FAQ.html">FAQ Page</a></li>
-    <li><a href="AboutUs.html">About Us</a></li>
-    <li><a href="contact.html">Contact Us</a></li>
-  </ul>
-  
-      <!-- 2. First Parallax section -->
-    <div class="parallax-container valign-wrapper">
-        <div class="parallax"><img src="3dprint.jpg"></div>
-        <div class="container">
+<footer>
+        <footer class="page-footer blue darken-3">
+          <div class="container">
             <div class="row">
-                <div class="col l12 m12 s12 white-text center-align">
-                    <h2>Layer by Layer</h2>
-                 
-                    <h5>shaping print one layer at a time</h5>
-                    <div class="row">
-                    </div>
-                    <a class="waves-effect waves-light btn blue darken-3"><i class="material-icons left">email</i>layerbylayer@oxfordprint.com</a>
-                </div>
+              <div class="col l6 s12">
+                <h5 class="white-text">Layer By Layer</h5>
+                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="home.html">Home</a></li>
+                  <li><a class="grey-text text-lighten-3" href="info%20page%20.html">Information</a></li>
+                  <li><a class="grey-text text-lighten-3" href="FAQ.html">FAQ</a></li>
+                  <li><a class="grey-text text-lighten-3" href="AboutUs.html">About Us</a></li>
+                  <li><a class="white-text" href="#!"></a></li>
+                </ul>
+              </div>
             </div>
-        </div>
-    </div>
-    
-    
-   
-    
-     <!-- 3. About Me section -->
-    <div class="container">
-        <div class="row">
-            <h2 class="section-header">3D Printing</h2>
-        </div>
-        <div class="row">
-            <p class="flow-text">3D printing, also know additive manufacturing, is a revolutionary process that creates three-dimensional objects layer by layer from a digital model. Unlike traditional manufacturing, which cuts or molds material, 3D printing builds objects by adding material — reducing waste and enabling complex, customized designs. For this reason, it's also called addative manufacturing.
-Our consulting team helps organizations understand and apply this technology to optimize production, prototype faster, and innovate smarter.</p>
-        </div>
-      
-    </div>
-    
-    
-     <!--4. Javascript-Carousel Feature-->
-    <div class="container">
-        <div class="row">
-            <h2 class="section-header">Our Team</h2>
-        </div>
-       <div class="carousel">
-    <a class="carousel-item" href="#one!"><img src=
-    "faith.jpg"></a>
-    <a class="carousel-item" href="#two!"><img src="madeline.jpg"></a>
-    <a class="carousel-item" href="#three!"><img src="riley.jpg"></a>
-    <a class="carousel-item" href="#four!"><img src="rex.JPG"></a>
-    <a class="carousel-item" href="#five!"><img src="3d%20printing%20for%203d.jpg"></a>
-  </div>
-
-<iframe src="https://www.youtube.com/embed/a42znmU6BLE?rel=0&modestbranding=1" width="100%" height="350"></iframe>
- 
- 
- 
-
- <footer>
-    
-        Copyright &copy; 2025 Layer by Layer - Riley Hammond
-    </footer>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2025 Layer By Layer
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+          </div>
+        </footer>
+</footer>
 
 
 </body>
