@@ -11,6 +11,10 @@
     <!-- Google Icon Font -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+    <!-- GOOGLE FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Pacifico&family=Zen+Dots&display=swap" rel="stylesheet">
 
     <!-- jQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
@@ -29,71 +33,121 @@
         $(document).ready(function() {
             $('.parallax').parallax();
         });
-           $(document).ready(function(){
-    $('.carousel').carousel();
-  });
+        $(document).ready(function() {
+            $('.carousel').carousel();
+        });
     </script>
 
     <style>
-        .brand-logo {
-            margin: 0px
+        .zen-dots-regular {
+            font-family: "Zen Dots", sans-serif;
+            font-weight: 400;
+            font-style: normal;
         }
         
-        h4 {font: bold;
-           }
+        .brand-logo {
+        margin-left: 5px;
+        }
         
+      
+
+
+        h4 {
+            font-weight: bold;
+            font-family: Zen dots;
+            color: blue;
+        }
+
+        h2 {
+            font-family: Zen dots;
+            text-decoration-color:
+        }
+
+        .brand-logo {
+            font-family: Zen dots;
+            font-size: xx-small;
+        }
+
         h5 {
             font-size: medium;
+            font-family:
         }
-        
-        img {size: landscape}
-        
-          body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-  }
 
-  main {
-    flex: 1 0 auto;
-  }
+
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1 0 auto;
+        }
+
+        footer {
+            width: 100%;
+            margin-top: 0;
+            padding-top;
+            0;
+        }
+
+        #contact. container {
+
+            max-width: 800px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+
+        iframe {
+            width: 100%;
+            height: 380px;
+
+
+
+
+        }
     </style>
-
-
 </head>
 
 <body>
     <!-- 1. Navigation section -->
     <nav>
-    <div class="nav-wrapper blue darken-3">
-      <a href="#!" class="brand-logo white-text">Layer By Layer</a>
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="home.html">Home</a></li>
-        <li><a href="info%20page%20.html">Information Page</a></li>
-        <li><a href="FAQ.html">FAQ Page</a></li>
-        <li><a href="AboutUs.html">About Me</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-      </ul>
-    </div>
-  </nav>
+        <div class="nav-wrapper blue darken-3">
 
-  <ul class="sidenav" id="mobile-demo">
-    <li><a href="home.html">Home</a></li>
-    <li><a href="info%20page%20.html">Information</a></li>
-    <li><a href="FAQ.html">FAQ Page</a></li>
-    <li><a href="AboutUs.html">About Us</a></li>
-    <li><a href="contact.html">Contact Us</a></li>
-  </ul>
-  
-      <!-- 2. First Parallax section -->
+            <a href="#!" class="brand-logo white-text"><i class="large material-icons">layers</i>Layer By Layer</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="info%20page%20.html">Information Page</a></li>
+                <li><a href="FAQ.html">FAQ Page</a></li>
+                <li><a href="AboutUs.html">About Me</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="info%20page%20.html">Information</a></li>
+        <li><a href="FAQ.html">FAQ Page</a></li>
+        <li><a href="AboutUs.html">About Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+    </ul>
+
+
+
+    <!-- 2. Parallax section -->
     <div class="parallax-container valign-wrapper">
-        <div class="parallax"><img src="images/3dprint.jpg"></div>
+        <div class="parallax"><img src="images/3dprint.jpg" alt="3D Printer" allowfullscreen></div>
         <div class="container">
             <div class="row">
                 <div class="col l12 m12 s12 white-text center-align">
                     <h2>Layer by Layer</h2>
-                 
+
                     <h5>shaping print one layer at a time</h5>
                     <div class="row">
                     </div>
@@ -102,66 +156,114 @@
             </div>
         </div>
     </div>
-    
-     <!-- 3. About Me section -->
+
+    <!-- 3. About Me section -->
     <div class="container">
         <div class="row">
             <h2 class="section-header">3D Printing</h2>
         </div>
         <div class="row">
             <p class="flow-text">3D printing, also know additive manufacturing, is a revolutionary process that creates three-dimensional objects layer by layer from a digital model. Unlike traditional manufacturing, which cuts or molds material, 3D printing builds objects by adding material — reducing waste and enabling complex, customized designs. For this reason, it's also called addative manufacturing.
-Our consulting team helps organizations understand and apply this technology to optimize production, prototype faster, and innovate smarter.</p>
+                Our consulting team helps organizations understand and apply this technology to optimize production, prototype faster, and innovate smarter.</p>
         </div>
-      
-    </div>
-    
 
-     <!--4. Javascript-Carousel Feature-->
+    </div>
+
+
+    <!--4. Javascript-Carousel Feature-->
     <div class="container">
         <div class="row">
             <h2 class="section-header">Our Team</h2>
         </div>
-       <div class="carousel">
-    <a class="carousel-item" href="#one!"><img src=
-    "faith.jpg"></a>
-    <a class="carousel-item" href="#two!"><img src="madeline.jpg"></a>
-    <a class="carousel-item" href="#three!"><img src="riley.jpg"></a>
-    <a class="carousel-item" href="#four!"><img src="rex.JPG"></a>
-    <a class="carousel-item" href="#five!"><img src="3d%20printing%20for%203d.jpg"></a>
-  </div>
+        <div class="carousel">
+            <a class="carousel-item" href="#one!"><img src="faith.jpg"></a>
+            <a class="carousel-item" href="#two!"><img src="madeline.jpg"></a>
+            <a class="carousel-item" href="#three!"><img src="riley.jpg"></a>
+            <a class="carousel-item" href="#four!"><img src="rex.JPG"></a>
+            <a class="carousel-item" href="#five!"><img src="3d%20printing%20for%203d.jpg"></a>
+        </div>
+    </div>
 
- 
 
-<iframe src="https://www.youtube.com/embed/a42znmU6BLE?rel=0&modestbranding=1" width="100%" height="350"></iframe>
+    <!-- video -->
+    <div class="container" id="video">
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/a42znmU6BLE?rel=0&modestbranding=1" title="3D Printing Video" allowfullscreen>
+            </iframe>
+        </div>
+    </div>
 
-<footer>
-        <footer class="page-footer blue darken-3">
-          <div class="container">
+    <!--contact-->
+    <!-- contact us -->
+    <section id="contact" class="section section-contact scrollspy">
+        <div class="container">
+            <div>
+                <h4 class="center">Contact Us</h4>
+            </div>
             <div class="row">
-              <div class="col l6 s12">
-                <h5 class="white-text">Layer By Layer</h5>
-                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-              </div>
-              <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Links</h5>
-                <ul>
-                  <li><a class="grey-text text-lighten-3" href="home.html">Home</a></li>
-                  <li><a class="grey-text text-lighten-3" href="info%20page%20.html">Information</a></li>
-                  <li><a class="grey-text text-lighten-3" href="FAQ.html">FAQ</a></li>
-                  <li><a class="grey-text text-lighten-3" href="AboutUs.html">About Us</a></li>
-                  <li><a class="white-text" href="#!"></a></li>
-                </ul>
-              </div>
+                <form action="thankyou.htm;" method="POST" class="col s12">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input id="icon_prefix" type="text" name="name" class="validate">
+                            <label for="icon_prefix">Name</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <i class="material-icons prefix">email</i>
+                            <input id="icon_email" type="text" name="email" class="validate">
+                            <label for="icon_email">Email</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <i class="material-icons prefix">phone</i>
+                            <input id="icon_telephone" type="tel" class="validate" name="phone">
+                            <label for="icon_telephone">Telephone</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <i class="material-icons prefix">date_range</i>
+                            <input id="icon_date" type="text" class="datepicker" name="date">
+                            <label for="icon_date">Best Date to Contact</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">message</i>
+                            <textarea id="textarea" class="materialize-textarea" name="comment"></textarea>
+                            <label for="textarea1">Comments</label>
+                        </div>
+                    </div>
+                    <input type="submit" value="Submit" class="blue darken-3 btn-large">
+                </form>
             </div>
-          </div>
-          <div class="footer-copyright">
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <footer class="page-footer blue darken-3">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Layer By Layer</h5>
+                    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="home.html">Home</a></li>
+                        <li><a class="grey-text text-lighten-3" href="info%20page%20.html">Information</a></li>
+                        <li><a class="grey-text text-lighten-3" href="FAQ.html">FAQ</a></li>
+                        <li><a class="grey-text text-lighten-3" href="AboutUs.html">About Us</a></li>
+                        <li><a class="white-text" href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
             <div class="container">
-            © 2025 Layer By Layer
-            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+                © 2025 Layer By Layer
+                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
             </div>
-          </div>
-        </footer>
-</footer>
+        </div>
+    </footer>
+
 
 
 </body>
