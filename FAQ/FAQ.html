@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3D Printing FAQ</title>
+
+  <!-- Google Icon Font -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Materialize CSS -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="FAQ.css" />
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+  <!-- Materialize JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('.sidenav').sidenav();
+      $('.tabs').tabs();
+    });
+  </script>
+
+  <style>
+    /* Tabs Styling */
+    .tabs {
+      background-color: #e3f2fd;
+    }
+
+    .tabs .tab a {
+      color: #1565c0;
+      font-weight: 500;
+    }
+
+    .tabs .tab a.active {
+      background-color: #bbdefb;
+      color: #0d47a1;
+    }
+
+    .tabs .indicator {
+      background-color: #1565c0;
+      height: 4px;
+    }
+
+    /* tabs equal width */
+    .tabs .tab {
+      width: 20% !important; /* 5 equal tabs */
+      text-align: center;
+    }
+
+    /* FAQ content styling */
+    .faq-content {
+      padding: 20px;
+      background: #fafafa;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+
+    .faq-image {
+      float: right;
+      width: 40%;
+      margin: 10px 0 10px 20px;
+      border-radius: 8px;
+    }
+
+    
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    main {
+      flex: 1 0 auto;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-wrapper blue">
+      <a href="#!" class="brand-logo white-text">3D Printing FAQ</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+        <i class="material-icons">menu</i>
+      </a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="info.html">Information</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Mobile sidenav -->
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="home.html">Home</a></li>
+    <li><a href="info.html">Information</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+  </ul>
+
+  <!-- Main Content -->
+  <main>
+    <div class="container section">
+      <h4 class="center-align">3D Printing FAQ</h4>
+
+      <!-- Tabs -->
+      <div class="row">
+        <div class="col s12">
+          <ul class="tabs">
+            <li class="tab"><a href="#q1" class="active">What is 3D printing?</a></li>
+            <li class="tab"><a href="#q2">Importance</a></li>
+            <li class="tab"><a href="#q3">Cost</a></li>
+            <li class="tab"><a href="#q4">Applications</a></li>
+            <li class="tab"><a href="#q5">Time</a></li>
+          </ul>
+        </div>
+
+        <div id="q1" class="col s12 faq-content">
+          <h5>What is 3D printing?</h5>
+          <img src="3dprint.webp" alt="image" class="faq-image">
+          <p>3D printing is a manufacturing process that makes physical objects by building them layer by layer from a
+            digital model. Instead of cutting material away, like in traditional manufacturing, it adds material, usually
+            plastic, resin, or metal, to create shapes.</p>
+        </div>
+
+        <div id="q2" class="col s12 faq-content">
+          <h5>Why is 3D printing important?</h5>
+          <p>3D printing is important because it enables rapid prototyping, customization, and low-cost manufacturing while
+            reducing waste, speeding up product development, and allowing complex designs that traditional methods can't
+            easily produce.</p>
+        </div>
+
+        <div id="q3" class="col s12 faq-content">
+          <h5>How much does 3D printing cost?</h5>
+          <p>The cost of 3D printing can vary based on the size, complexity, and weight of the item printed. However, a <a
+              href="https://all3dp.com/1/best-3d-printer-reviews-top-3d-printers-home-3-d-printer-3d/">3D printer</a> itself
+            can range anywhere from $200 for a desktop version, to over $1,000,000 for an industrial version. Meanwhile,
+            the filaments used within the 3D printer cost between $20 to $200 per kilogram.</p>
+        </div>
+
+        <div id="q4" class="col s12 faq-content">
+          <h5>What can 3D printing make?</h5>
+          <p>You can 3D print many things, such as prototypes, tools, automotive/aerospace parts, fashion items, and
+            housing components. It’s even in development to 3D print organs for transplants.</p>
+        </div>
+
+        <div id="q5" class="col s12 faq-content">
+          <h5>How long does 3D printing take?</h5>
+          <p>3D print times vary depending on the complexity and size of what you are printing. These times can range from
+            minutes to several days depending on object size, layer height, material, and printer type. Small parts may
+            take 30 minutes, while large and more complex ones can take over 24 hours.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="page-footer blue">
+    <div class="container blue">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Layer By Layer</h5>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Links</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="home.html">Home</a></li>
+            <li><a class="grey-text text-lighten-3" href="info%20page%20.html">Information</a></li>
+            <li><a class="grey-text text-lighten-3" href="FAQ.html">FAQ</a></li>
+            <li><a class="grey-text text-lighten-3" href="AboutUs.html">About Us</a></li>
+            <li><a class="grey-text text-lighten-3" href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container blue">
+        © 2025 Layer By Layer
+        <a class="grey-text text-lighten-4 right" href="#!">More
+
