@@ -33,9 +33,7 @@
         $(document).ready(function() {
             $('.parallax').parallax();
         });
-        $(document).ready(function() {
-            $('.carousel').carousel();
-        });
+       
     </script>
 
     <style>
@@ -110,6 +108,10 @@
 
 
         }
+        
+        
+        #image_list {display: none;}
+
     </style>
 </head>
 
@@ -170,24 +172,33 @@
     </div>
 
 
-    <!--4. Javascript-Carousel Feature-->
-    <div class="container">
-        <div class="row">
-            <h2 class="section-header">Our Team</h2>
+    <!--4. Slideshow-->
+    <div class="col 16 m6 s12">
+            <h4>Our Team</h4>
             <p class="flow-text"> We're a team of passionate and forward-thinking developers dedicated to bringing 3D printing 
             solutions to life. Our group combines creativity, technical expertise, and problem solving skills
             to help businesses and individuals turn their ideas into reality. Each member contributes a unique perespective
             from web development and desing to innovation and engineering allowing us to buils a consulting website that's both user-friendly
             and future focused. Together, we believe in using technology to simplify complex processes and make 3D printing accessible to everyone.</p>
         </div>
-        <div class="carousel">
-            <a class="carousel-item" href="#one!"><img src="faith.jpg"></a>
-            <a class="carousel-item" href="#two!"><img src="madeline.jpg"></a>
-            <a class="carousel-item" href="#three!"><img src="riley.jpg"></a>
-            <a class="carousel-item" href="#four!"><img src="rex.JPG"></a>
-            <a class="carousel-item" href="#five!"><img src="3d%20printing%20for%203d.jpg"></a>
-        </div>
-    </div>
+        <br>
+        <ul id="slideshow">
+                <li><a href="madeline.jpg" title="Madeline Delong"></a></li>
+                <li><a href="riley.jpg" title="Riley Hammond"></a></li>
+                <li><a href="rex.JPG" title="Rex Folivi"></a></li>
+                <li><a href="faith.jpg" title="Faith Ondrusek"></a></li>
+            </ul>
+            
+                <script>
+    let links = document.getElementById("slideshow").getElementsByTagName("a");
+    let count = 0;
+    let timer = setInterval(function() {
+        count = (count + 1) % links.length;
+        document.getElementById("slideshowimage").src = links[count].href;
+        document.getElementById("slideshowcaption").innerHTML = links[count].title;
+    }, 2000);
+</script>
+            
 
 
     <!-- video -->
